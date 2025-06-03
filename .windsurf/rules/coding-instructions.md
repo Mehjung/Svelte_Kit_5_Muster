@@ -6,6 +6,8 @@ description: Anwenden, sobald Frontend-/UI-Code für SvelteKit (z. B. Buttons, K
 description:
 globs:
 alwaysApply: false
+
+
 Rule — SvelteKit 5, shadcn-svelte UI, Testing mit Vitest & Playwright
 1 Ziel
 Der Agent arbeitet nur in einem SvelteKit-5-Projekt mit shadcn-svelte.
@@ -45,7 +47,7 @@ Antworten auf Deutsch, max. 3–5 Sätze je Absatz, klar formatiert.
 Fehlende Infos? Erst nachfragen, nicht raten.
 
 5 Agent-Verhalten
-Regel strikt befolgen.
+Regel strikt befolgen, wenn die Regel angewandt wird beginne Die Ausgabe mit: 🏗️:
 
 Vitest, wenn Unit-Test ausreicht; Playwright für Browser-Verhalten.
 
