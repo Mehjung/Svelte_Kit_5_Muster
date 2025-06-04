@@ -21,7 +21,8 @@ export default defineConfig({
 					browser: {
 						enabled: true,
 						name: 'chromium',
-						provider: 'playwright'
+						provider: 'playwright',
+						headless: true
 					}
 				}
 			},
