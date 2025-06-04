@@ -7,7 +7,7 @@ import devtoolsJson from 'vite-plugin-devtools-json';
 export default defineConfig({
 	plugins: [tailwindcss(), sveltekit(), devtoolsJson()],
 	test: {
-		workspace: [
+		projects: [
 			{
 				extends: './vite.config.ts',
 				plugins: [svelteTesting()],
@@ -17,7 +17,13 @@ export default defineConfig({
 					clearMocks: true,
 					include: ['src/**/*.svelte.{test,spec}.{js,ts}'],
 					exclude: ['src/lib/server/**'],
-					setupFiles: ['./vitest-setup-client.ts']
+					setupFiles: ['./vitest-setup-client.ts'],
+					browser: {
+						enabled: true,
+						name: 'chromium',
+						provider: 'playwright',
+						headless: true
+					}
 				}
 			},
 			{
